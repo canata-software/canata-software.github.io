@@ -1,0 +1,372 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", "Yu Gothic", "Meiryo", sans-serif;
+    color: #202b3c;
+    background: #ffffff;
+    line-height: 1.8;
+}
+
+.header {
+    height: 76px;
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #edf0f5;
+    background: #ffffff;
+}
+
+.logo {
+    color: #202b3c;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    font-weight: 400;
+    color: #6584b5;
+}
+
+.header nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header nav a {
+    color: #536174;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header nav a:hover {
+    color: #4779c8;
+}
+
+.hero {
+    min-height: 550px;
+    padding: 90px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(120deg, #f7f9fd, #edf3fc);
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    color: #6688bd;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 17px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.18;
+    letter-spacing: -2px;
+    font-weight: 800;
+    color: #1e2b40;
+}
+
+.hero h1 span {
+    color: #6488c2;
+}
+
+.hero-description {
+    margin-top: 25px;
+    color: #647185;
+    font-size: 15px;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+    padding: 13px 23px;
+    color: white;
+    background: #426fae;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    background: #315b95;
+    transform: translateY(-2px);
+}
+
+.hero-decoration {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.decoration-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(1px);
+}
+
+.circle-one {
+    width: 240px;
+    height: 240px;
+    top: 0;
+    right: 0;
+    background: #d8e5f8;
+}
+
+.circle-two {
+    width: 160px;
+    height: 160px;
+    bottom: 0;
+    left: 0;
+    background: #b9cde9;
+    opacity: 0.8;
+}
+
+.decoration-card {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top: 55px;
+    left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(48, 76, 120, 0.13);
+    transform: rotate(-6deg);
+}
+
+.decoration-icon {
+    color: #4779c8;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.decoration-caption {
+    color: #8291a6;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+}
+
+.section {
+    padding: 95px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-heading h2,
+.about-inner h2 {
+    font-size: 34px;
+    color: #202b3c;
+    letter-spacing: -1px;
+}
+
+.section-heading > p:last-child {
+    margin-top: 10px;
+    color: #8993a2;
+    font-size: 13px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.app-card {
+    padding: 30px;
+    border: 1px solid #e8edf4;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: 0.2s;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(35, 58, 91, 0.08);
+    border-color: #d4e0f1;
+}
+
+.app-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 23px;
+}
+
+.blue {
+    color: #4779c8;
+    background: #eaf1fc;
+}
+
+.purple {
+    color: #8267bd;
+    background: #f1edfa;
+}
+
+.green {
+    color: #4c987b;
+    background: #eaf5ef;
+}
+
+.orange {
+    color: #c68b50;
+    background: #fbf1e7;
+}
+
+.app-category {
+    color: #8b9ab0;
+    font-size: 9px;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+}
+
+.app-card h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #25344a;
+}
+
+.app-card p {
+    margin-top: 10px;
+    min-height: 54px;
+    color: #778396;
+    font-size: 13px;
+}
+
+.app-status {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 4px 10px;
+    color: #6685b2;
+    background: #f0f4fa;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.about-section {
+    padding: 85px 10%;
+    background: #f6f8fb;
+}
+
+.about-inner {
+    max-width: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-inner > p:last-child {
+    margin-top: 22px;
+    color: #69778a;
+    font-size: 14px;
+}
+
+.footer {
+    padding: 45px 20px;
+    text-align: center;
+    border-top: 1px solid #edf0f5;
+}
+
+.footer p {
+    margin-top: 8px;
+    color: #8793a4;
+    font-size: 12px;
+}
+
+.footer small {
+    display: block;
+    margin-top: 24px;
+    color: #a3acb9;
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        height: 65px;
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .header nav {
+        gap: 15px;
+    }
+
+    .header nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 75px 8%;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .app-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .about-inner h2 {
+        font-size: 28px;
+    }
+
+    .about-section {
+        padding: 70px 8%;
+    }
+}
